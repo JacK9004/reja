@@ -1,0 +1,20 @@
+{
+    "name": "Jushkin Kozimov",
+    "profession": "Software Engineer",
+    "age": 34,
+    "residence": "Uzbekistan",
+    "adress": "South Korea, Gimhae",
+    "language": ["Uzbek", "Russian", "English", "Korean"],
+    "skills": ["HTML", "CSS", "JS", "NodeJS", "Python"],
+    "extra_skills": ["Bootstrap, Materialize", "Styling, Css", "Django, Flask", "GIT Knowlage"],
+    "work_place": "IT Company",
+    "service_desc": "vdfsvvfvfdvfdbfdbfbfdbfdbfdbfdbfdbfdbdfbdfbdfbfdbdfbfdbdfbdfb",
+    "about_me": "I am Kozimov Jushkin. I am 34 years old an I am PhD. student",
+    "city": "Tashkent",
+    "title": ["Flower", "Seedlings", "Gardner", "Old", "New"],
+    "flower_desc": ["What is a Flower?", "What is a Seedling?", "Who is Gardner"],
+    "flower_name": ["Tulip", "Daffodil", "Poppy", "Sunflower", "Bluebell", "Rose", "Snowdrop", "Cherry", "Blossom"],
+    "flower_price": ["15$", "25$", "12$", "20$", "35$", "30$", "22$", "19$", "9$"],
+    "famous_words": ["World is a beautefull with Flowers"],
+    "famous_name": ["Stive Jobs"]
+}
