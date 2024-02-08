@@ -1,0 +1,18 @@
+<svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2_6685">
+			<rect id="Icons/Home" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<circle id="Ellipse 10" cx="20.000000" cy="20.000000" r="20.000000" fill="#FFB400" fill-opacity="1.000000"/>
+	<rect id="Icons/Home" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<rect id="Icons/Home" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<rect id="Icons/Home" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<rect id="Icons/Home" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip2_6685)">
+		<path id="Vector" d="M26 26C26 26.1987 25.9209 26.3896 25.7803 26.5303C25.6396 26.6709 25.449 26.75 25.25 26.75L14.75 26.75C14.551 26.75 14.3604 26.6709 14.2197 26.5303C14.0791 26.3896 14 26.1987 14 26L14 19.25L11.75 19.25L19.4954 12.209C19.6333 12.0835 19.8132 12.0137 20 12.0137C20.1868 12.0137 20.3667 12.0835 20.5046 12.209L28.25 19.25L26 19.25L26 26Z" fill="#2B2B2B" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

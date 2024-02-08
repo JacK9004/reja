@@ -1,10 +1,10 @@
 {
-    "name": "Jushkin Kozimov",
+    "name": "Jack",
     "profession": "Software Engineer",
     "age": 34,
     "residence": "Uzbekistan",
     "adress": "South Korea, Gimhae",
-    "language": ["Uzbek", "Russian", "English", "Korean"],
+    "language": ["Uzbek", "English", "Korean"],
     "skills": ["HTML", "CSS", "JS", "NodeJS", "Python"],
     "extra_skills": ["Bootstrap, Materialize", "Styling, Css", "Django, Flask", "GIT Knowlage"],
     "work_place": "IT Company",
