@@ -1,18 +1,41 @@
-// Task A
+// Task B
 
-function harfHisobla(a, b) {
-    const harf = b.toLowerCase();
+function raqamHisobla(son) {
     let count = 0;
-    for (let i = 0; i < harf.length; i++) {
-        if (harf[i] === a) {
+    let i = 0;
+
+    while (i < son.length) {
+        if (!isNaN(son[i])) {
             count++;
         }
+        i++;
     }
+    
     return count;
 }
 
-const result = harfHisobla("a", "alibaba");
-console.log(result); 
+console.log(raqamHisobla("7htl8f42xt5l0m"));
+
+
+
+
+
+
+// // Task A
+
+// function harfHisobla(a, b) {
+//     const harf = b.toLowerCase();
+//     let count = 0;
+//     for (let i = 0; i < harf.length; i++) {
+//         if (harf[i] === a) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+// const result = harfHisobla("a", "alibaba");
+// console.log(result); 
 
 /*callback function*/
 
