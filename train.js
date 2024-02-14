@@ -1,20 +1,25 @@
-// Task B
+//Task C
 
-function raqamHisobla(son) {
-    let count = 0;
-    let i = 0;
 
-    while (i < son.length) {
-        if (!isNaN(son[i])) {
-            count++;
-        }
-        i++;
-    }
+
+
+// // Task B
+
+// function raqamHisobla(son) {
+//     let count = 0;
+//     let i = 0;
+
+//     while (i < son.length) {
+//         if (!isNaN(son[i])) {
+//             count++;
+//         }
+//         i++;
+//     }
     
-    return count;
-}
+//     return count;
+// }
 
-console.log(raqamHisobla("7htl8f42xt5l0m"));
+// console.log(raqamHisobla("7htl8f42xt5l0m"));
 
 
 
