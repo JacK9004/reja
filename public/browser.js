@@ -12,7 +12,7 @@ function itemTemplate(item) {
         </button>
         <button 
         data-id="${item._id}" 
-            class="delete me btn danger btn-sm">
+            class="delete-me btn btn-danger btn-sm">
             O'chirish
         </button>
     </div>
@@ -37,4 +37,29 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
     .catch((err) => {
         console.log("Iltimos qayta harakat qiling!");
     });
+});
+
+
+document.addEventListener("click", function (e) {
+    // delete operation
+    console.log(e.target);
+    if (e.target.classList.contains("delete-me")) {
+        if (confirm("Aniq ochirmoqchimisiz")) {
+        axios
+        .post("/delete-item", { id: e.target.getAttribute("data-id") })
+        .then((response) => {
+            console.log(response.data);
+            e.target.parentElement.parentElement.remove();
+        })
+        .catch((err) => {
+            console.log("Iltimos qayta harakat qiling!");
+        });
+       }
+    }
+
+    // edit operation    
+    if (e.target.classList.contains("edit-me")) {
+        alert("Siz edit tugmasini bosdingiz");
+    }
+        
 });
