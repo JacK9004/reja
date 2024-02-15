@@ -1,4 +1,65 @@
-//Task C
+// Task C
+
+class MevaDokon {
+    constructor(banan, olma, gilos) {
+        this.banan = banan;
+        this.olma = olma;
+        this.gilos = gilos;
+    }
+
+    joriyaQoldi() {
+        const joriya = `${this.banan} banan, ${this.olma} olma, va ${this.gilos} gilos`;
+        console.log(`Hozir vaqtda ${joriya} mavjud!`);
+    }
+
+    sotish(mahsulot, miqdori) {
+        if (mahsulot === 'banan') {
+            if (this.banan >= miqdori) {
+                this.banan -= miqdori;
+                console.log(`${miqdori} ta banan sotildi!`);
+            } else {
+                console.log(`Sotib olish uchun yetarli banan yo'q: ${miqdori}!`);
+            }
+        } else if (mahsulot === 'olma') {
+            if (this.olma >= miqdori) {
+                this.olma -= miqdori;
+                console.log(`${miqdori} ta olma sotildi!`);
+            } else {
+                console.log(`Sotib olish uchun yetarli olma yo'q: ${miqdori}!`);
+            }
+        } else if (mahsulot === 'gilos') {
+            if (this.gilos >= miqdori) {
+                this.gilos -= miqdori;
+                console.log(`${miqdori} ta gilos sotildi!`);
+            } else {
+                console.log(`Sotib olish uchun yetarli gilos yo'q: ${miqdori}!`);
+            }
+        } else {
+            console.log('Noto\'g\'ri mahsulot!');
+        }
+    }
+
+    qabulQilish(mahsulot, miqdori) {
+        if (mahsulot === 'banan') {
+            this.banan += miqdori;
+            console.log(`${miqdori} ta banan qabul qilindi!`);
+        } else if (mahsulot === 'olma') {
+            this.olma += miqdori;
+            console.log(`${miqdori} ta olma qabul qilindi!`);
+        } else if (mahsulot === 'gilos') {
+            this.gilos += miqdori;
+            console.log(`${miqdori} ta gilos qabul qilindi!`);
+        } else {
+            console.log('Noto\'g\'ri mahsulot!');
+        }
+    }
+}
+
+const mevaDokon = new MevaDokon(4, 5, 2);
+mevaDokon.joriyaQoldi();
+mevaDokon.sotish('banan', 3);
+mevaDokon.qabulQilish('olma', 4);
+mevaDokon.joriyaQoldi();
 
 
 
