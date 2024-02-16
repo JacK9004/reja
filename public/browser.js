@@ -23,7 +23,6 @@ let createField = document.getElementById("create-field");
 
 document.getElementById("create-form").addEventListener("submit", function (e) {
     e.preventDefault();
-
     axios
     .post("/create-item", {reja: createField.value})
     .then((response) => {
@@ -59,7 +58,33 @@ document.addEventListener("click", function (e) {
 
     // edit operation    
     if (e.target.classList.contains("edit-me")) {
-        alert("Siz edit tugmasini bosdingiz");
+       let userInput = prompt(
+        "O'zgartirish kiriting", 
+        e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
+        );
+       if (userInput) {
+       axios.post("/edit-item", {
+        id: e.target.getAttribute("data-id"),
+        new_input: userInput,
+       })
+       .then((response) => {
+        console.log(response.data);
+        e.target.parentElement.parentElement.querySelector(
+            ".item-text"
+        ).innerHTML = userInput;
+        })
+        .catch((err) => {
+            console.log("Iltimos Qaytadan harakat qiling");
+       });
+       }
     }
         
+});
+
+    // All delete
+document.getElementById("clean-all").addEventListener("click", function () {
+    axios.post("/delete-all", { delete_all: true }).then((respose) => {
+    alert(respose.data.state);
+    document.location.reload();
+    });
 });
