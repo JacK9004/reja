@@ -1,18 +1,39 @@
+// Task E
+
+function teskariOqish(a) {
+    return a.split('').reverse().join('');
+}
+
+console.log(teskariOqish("jushkin"));
+console.log(teskariOqish("hello"));
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Task D
 
 // Define
-function checkContent(birinchi, ikkinchi) {
+// function checkContent(birinchi, ikkinchi) {
    
-    const bir = birinchi.split('').sort();
-    const ikki = ikkinchi.split('').sort();
+//     const bir = birinchi.split('').sort();
+//     const ikki = ikkinchi.split('').sort();
     
    
-    return bir.join('') === ikki.join('');
-}
+//     return bir.join('') === ikki.join('');
+// }
 
-// Call
-console.log(checkContent("jushkin", "knuisjh")); 
-console.log(checkContent("olim", "aziz"));
+// // Call
+// console.log(checkContent("jushkin", "knuisjh")); 
+// console.log(checkContent("olim", "aziz"));
 
 
 
