@@ -1,17 +1,54 @@
-// Task E
+//Task F
 
-function teskariOqish(a) {
-    return a.split('').reverse().join('');
+function findDoublers(word) {
+     word = word.toLowerCase();
+    
+    let newWord = word.split('');
+    for (let i = 0; i < newWord.length; i++) {
+        for (let j = i + 1; j < newWord.length; j++) {
+           if (newWord[i] === newWord[j]) {
+            return true;
+            }
+        }
+    }
+     return false;
 }
 
-console.log(teskariOqish("jushkin"));
-console.log(teskariOqish("hello"));
+console.log(findDoublers("Salom"));
+console.log(findDoublers("Abdulla"));
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Task E
+
+// function teskariOqish(a) {
+//     return a.split('').reverse().join('');
+// }
+
+// console.log(teskariOqish("jushkin"));
+// console.log(teskariOqish("hello"));
 
 
 
