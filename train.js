@@ -1,21 +1,22 @@
-//Task F
+// Task-G
 
-function findDoublers(word) {
-     word = word.toLowerCase();
+function engKattaIndex(arr) {
+  
+    let kattaQiymat = arr[0];
+    let kattaIndex = 0;
     
-    let newWord = word.split('');
-    for (let i = 0; i < newWord.length; i++) {
-        for (let j = i + 1; j < newWord.length; j++) {
-           if (newWord[i] === newWord[j]) {
-            return true;
-            }
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > kattaQiymat) {
+           kattaQiymat = arr[i];
+           kattaIndex = i;
         }
     }
-     return false;
+    
+    return kattaIndex;
 }
 
-console.log(findDoublers("Salom"));
-console.log(findDoublers("Abdulla"));
+console.log(engKattaIndex([8, 45, 19, 65, 86])); 
+console.log(engKattaIndex([89, 5, 29, 65, 36]));
 
 
 
@@ -38,6 +39,38 @@ console.log(findDoublers("Abdulla"));
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //Task F
+
+// function findDoublers(word) {
+//      word = word.toLowerCase();
+    
+//     let newWord = word.split('');
+//     for (let i = 0; i < newWord.length; i++) {
+//         for (let j = i + 1; j < newWord.length; j++) {
+//            if (newWord[i] === newWord[j]) {
+//             return true;
+//             }
+//         }
+//     }
+//      return false;
+// }
+
+// console.log(findDoublers("Salom"));
+// console.log(findDoublers("Abdulla"));
 
 
 
